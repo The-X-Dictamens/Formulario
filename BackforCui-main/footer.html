@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <footer>
+
+        <div id="map" style="width: 800px; height: 600px;"></div>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleHhvbWJ5IiwiYSI6ImNsaWo4c3d6NzA1NnMzZXBiZjE2a2I0aDAifQ.nVog7tI8-GkimJfWeb-hIg';
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v11',
+              center: [ -99.17491900, 19.45388900], // Nuevas coordenadas del CECYT 9
+              zoom: 17 // Ajusta el nivel de zoom según sea necesario
+            });
+          
+            var marker = new mapboxgl.Marker()
+              .setLngLat([ -99.17491901, 19.45388901]) // Nuevas coordenadas del marcador
+              .addTo(map);
+          </script>
+    </footer>
+
+    <div class="scripts_foot">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+
+    </div>
+    
+</body>
+</html>
