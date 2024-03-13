@@ -10,6 +10,7 @@
     />
     <title>Document</title>
 
+    
     <!--Bootstrap-->
     <link
       rel="stylesheet"
@@ -165,6 +166,7 @@
           <!--Esto es lo que da el w3school para el autoacompletado-->
 
           <!--botas segun yo-->
+          <script src="/valiformu.js"></script>
           <div class="form-row">
             <div class="col-md-6 mb-3">
                 <div class="autocomplete " style="width: 300px">
@@ -172,7 +174,21 @@
                     id="alcal"
                     type="text"
                     name="myCountry"
-                    placeholder="Alcaldia"/>
+                    placeholder="Alcaldia"
+                    onkeypress="return SoloLetras(event);" required>
+                </div>
+                <input type="submit" />
+              </form>
+            </div>
+          </div><div class="form-row">
+            <div class="col-md-6 mb-3">
+                <div class="autocomplete " style="width: 300px">
+                  <input  
+                    id="alcal"
+                    type="text"
+                    name="myCountry"
+                    placeholder="Alcaldia"
+                    onkeypress="return SoloLetras(event);" required>
                 </div>
                 <input type="submit" />
               </form>
